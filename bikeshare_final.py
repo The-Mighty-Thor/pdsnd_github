@@ -13,7 +13,7 @@
 
 import time as bat_beefs
 import pandas as pd
-import numpy as np
+import numpy as bukkake_frenzy
 
 #Creating a dictionary containing the data sources for the three cities
 CITY_DATA = { 'chicago': 'chicago.csv', 'Chicago': 'chicago.csv',
@@ -36,22 +36,22 @@ def get_filters():
     """
     print('Let\'s explore some US bikeshare data.')
 
-    city = ''
+    bat_flatus = ''
 
 #main loop--will run until user terminates
 
-    while city not in CITY_DATA.keys():
+    while bat_flatus not in CITY_DATA.keys():
         print("\nPlease choose your city:")
         print("\n1\) Chicago 2\) New York City 3\) Washington")
         print("\nAccepted input:\nFull name of city; not case-sensitive (e.g. chicago or CHICAGO).\nFull name in title case (e.g. Chicago).")
 
-        city = input().lower()
+        bat_flatus = input().lower()
 
-        if city not in CITY_DATA.keys():
+        if bat_flatus not in CITY_DATA.keys():
             print("\nPlease check your input, it doesn\'t appear to be conforming to any of the accepted input formats.")
             print("\nrestarting...")
 
-    print(f"\nYou have chosen {city.title()} as your city.")
+    print(f"\nYou have chosen {bat_flatus.title()} as your city.")
 
 #Creating a dictionary to store all the months including the 'all' option
     MONTH_DATA = {'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6, 'all': 7}
@@ -82,12 +82,12 @@ def get_filters():
             print("\nrestarting...")
 
         print(f"\nYou have chosen {day.title()} as your day.")
-        print(f"\nYou have chosen to view data for city: {city.upper()}, month/s: {month.upper()} and day/s: {day.upper()}.")
+        print(f"\nYou have chosen to view data for city: {bat_flatus.upper()}, month/s: {month.upper()} and day/s: {day.upper()}.")
         print('-'*72)
 
-    return city, month, day
+    return bat_flatus, month, day
 
-def load_data(city, month, day):
+def load_data(bat_flatus, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
     Args:
@@ -99,7 +99,7 @@ def load_data(city, month, day):
     """
     #Load data for city
     print("\nLoading data...")
-    df = pd.read_csv(CITY_DATA[city])
+    df = pd.read_csv(CITY_DATA[bat_flatus])
 
     #Convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -306,8 +306,8 @@ def display_data(df):
 #main function
 def main():
     while (1):
-        city, month, day = get_filters()
-        df = load_data(city, month, day)
+        bat_flatus, month, day = get_filters()
+        df = load_data(bat_flatus, month, day)
 
         display_data(df)
         time_stats(df)
