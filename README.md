@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+Created 1/19/2021 Tuesday
 
 ### Project Title
-Replace the Project Title
+Udacity Git Final Project
 
 ### Description
-Describe what your project is about and what it does
+Documents the effective use of version control---specifically, improving the documentation of "bikeshare.py," a previous Udacity project.
 
 ### Files used
-Include the files used
+README.md
+.gitignore
+bikeshare_final.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Able to complete this entire project---with only consulting my notes from the cours (which surprised me, actually).
 
